@@ -130,7 +130,7 @@ function displayModal(data) {
                     <p class="text-lg font-semibold">Example</p>
                     <p class="mb-8 text-[#2e2d2d] text-lg">${data.sentence}</p>
                     <p  class="text-lg font-semibold mb-1">সমার্থক শব্দ গুলো</p>
-                    <div id="s-container" class="flex flex-col md:flex-row gap-1">
+                    <div id="s-container" class="flex  gap-1">
                     </div>
         </div>
      
