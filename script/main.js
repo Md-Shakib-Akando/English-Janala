@@ -122,7 +122,7 @@ function displayModal(data) {
      const modalContainer=document.getElementById("modal-container");
      modalContainer.innerHTML=`
      
-        <div class="p-8">
+        <div class="px-1 py-3 md:p-8">
 
                     <h3 class="text-xl font-bold mt-4 mb-8">${data.word} (<i class="fa-solid fa-microphone-lines"></i>:${data.pronunciation})</h3>
                     <h3 class="text-lg font-bold mb-1">Meaning</h3>
@@ -130,7 +130,7 @@ function displayModal(data) {
                     <p class="text-lg font-semibold">Example</p>
                     <p class="mb-8 text-[#2e2d2d] text-lg">${data.sentence}</p>
                     <p  class="text-lg font-semibold mb-1">সমার্থক শব্দ গুলো</p>
-                    <div id="s-container" class="flex  gap-1">
+                    <div id="s-container" class="flex flex-col md:flex-row gap-1">
                     </div>
         </div>
      
