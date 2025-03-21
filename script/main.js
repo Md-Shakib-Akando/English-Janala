@@ -233,7 +233,7 @@ function displayCategories(data){
 
     for(let cat of data){
      const btnDiv=document.createElement("div")
-     btnDiv.innerHTML=`<button id="btn-${cat.level_no}" onclick="loadVocab(${cat.level_no})" class="btn btn-outline btn-primary"><i class="fa-solid fa-book-open"></i>${cat.lessonName}</button>`;
+     btnDiv.innerHTML=`<button id="btn-${cat.level_no}" onclick="loadVocab(${cat.level_no})" class="btn btn-outline w-full btn-primary"><i class="fa-solid fa-book-open"></i>${cat.lessonName}</button>`;
      btnContainer.append(btnDiv);
     }
 }
