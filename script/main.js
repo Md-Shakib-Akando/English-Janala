@@ -157,6 +157,11 @@ function loadModal(mid){
     .then((tal)=>displayModal(tal.data))
     
 }
+function playAudio(word) {
+    const utterance = new SpeechSynthesisUtterance(word);
+    
+    window.speechSynthesis.speak(utterance);
+}
 
 
 
@@ -204,7 +209,7 @@ function displayVocab(data){
               </p>
               <div class="justify-between card-actions mt-8">
                 <button onclick="loadModal(${x.id})"  class="btn btn-sm hover:bg-white bg-[#1A91FF1A] modal-btn"><i class="fa-solid fa-info"></i></button>
-                <button class="btn  hover:bg-white btn-sm bg-[#1A91FF1A]"><i class="fa-solid fa-volume-high"></i></button>
+                <button onclick="playAudio('${x.word}')" class="btn  hover:bg-white btn-sm bg-[#1A91FF1A]"><i class="fa-solid fa-volume-high"></i></button>
               </div>
             </div>
           </div>
